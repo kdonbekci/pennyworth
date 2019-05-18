@@ -9,6 +9,9 @@ ANNOT_DIR = os.path.join(DATA_DIR, 'DeepFashion', 'annotations')
 LINK_DIR = os.path.join(DATA_DIR, 'link')
 DATASET_DIR = os.path.join(DATA_DIR, 'dataset')
 
+INPUT_SHAPE = (299, 299, 3)
+
+
 def load_pickle(filename):
     with open(filename, 'rb') as f:
         return pickle.load(f)
