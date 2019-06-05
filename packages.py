@@ -1,15 +1,13 @@
 import os, pickle
-import nbimporter
 
 SRC_DIR = os.path.dirname(os.path.realpath(__file__))
 DATA_DIR = os.path.join(SRC_DIR, '..', 'data')
 IMG_DIR = os.path.join(DATA_DIR,'DeepFashion', 'img')
-IMG_HRES_DIR = os.path.join(DATA_DIR, 'DeepFashion', 'img-hres')
 ANNOT_DIR = os.path.join(DATA_DIR, 'DeepFashion', 'annotations')
 LINK_DIR = os.path.join(DATA_DIR, 'link')
 DATASET_DIR = os.path.join(DATA_DIR, 'dataset')
-
-INPUT_SHAPE = (299, 299, 3)
+MODEL_DIR = os.path.join(SRC_DIR, '..', 'model')
+ACTIVATIONS_DIR = os.path.join(DATA_DIR, 'activations')
 
 
 def load_pickle(filename):
